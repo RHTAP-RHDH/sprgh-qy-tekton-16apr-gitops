@@ -1,0 +1,12 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+commonLabels:         
+  argocd/app-name: spr-test-gh-quay-tekton
+  janus-idp.io/tekton: spr-test-gh-quay-tekton
+  backstage.io/kubernetes-id: spr-test-gh-quay-tekton
+  backstage.io/kubernetes-namespace: rhtap-app 
+  app.kubernetes.io/part-of: spr-test-gh-quay-tekton
+resources:
+  - deployment.yaml
+  - route.yaml
+  - service.yaml

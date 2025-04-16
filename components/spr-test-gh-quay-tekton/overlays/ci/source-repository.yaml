@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: spr-test-gh-quay-tekton-repository
+spec:
+  url: https://github.com/RHTAP-RHDH/sprgh-qy-tekton-16apr
